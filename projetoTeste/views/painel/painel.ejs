@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+        <a class="navbar-brand" href="/novo_grupo"><button type="button">Criar grupo</button></a>
+        <a class="navbar-brand" href="/entrar_grupo"><button type="button">Entrar em um grupo</button></a>
+        <a class="navbar-brand" href="/sair"><button type="button" name="button">Logout</button></a>
+      </div>
+   </nav>
+   <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Panelinha!</h1>
+      </div>
+    </div>
+
+
+  <br>
+
+
+  <div class="starter-template">
+
+    <tr>
+      <% grupo.forEach(function(users) { %>
+
+        <td><%- users.id %></td>
+        <td><%- users.descricao %></td>
+        <br>
+
+      <% }) %>
+    </tr>
+
+  </div>
+  </div>
+</body>
+</html>
